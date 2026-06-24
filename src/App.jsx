@@ -201,17 +201,16 @@ export default function PromptRedTeam() {
     setResult(null);
 
     try {
-  const res = await fetch("/api/evaluate", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: "claude-sonnet-4-20250514",
-      max_tokens: 1000,
-      system: SYSTEM_PROMPT,
-      messages: [{ role: "user", content: `Analyze this prompt for vulnerabilities:\n\n${prompt}` }],
-    }),
-  });
-
+      const res = await fetch("/api/evaluate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-20250514",
+          max_tokens: 1000,
+          system: SYSTEM_PROMPT,
+          messages: [{ role: "user", content: `Analyze this prompt for vulnerabilities:\n\n${prompt}` }],
+        }),
+      });
       const data = await res.json();
       const text = data.content?.map(b => b.text || "").join("") || "";
       const clean = text.replace(/```json|```/g, "").trim();
