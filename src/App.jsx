@@ -211,6 +211,7 @@ export default function PromptRedTeam() {
           messages: [{ role: "user", content: `Analyze this prompt for vulnerabilities:\n\n${prompt}` }],
         }),
       });
+      
       const data = await res.json();
       const text = data.content?.map(b => b.text || "").join("") || "";
       const clean = text.replace(/```json|```/g, "").trim();
