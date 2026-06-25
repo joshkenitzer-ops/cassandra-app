@@ -214,8 +214,13 @@ export default function PromptRedTeam() {
       
       const data = await res.json();
       const text = data.content?.map(b => b.text || "").join("") || "";
-      const clean = text.replace(/```json|```/g, "").trim();
-      const parsed = JSON.parse(clean);
+      const clean = text
+         .replace(/```json/g, "")
+         .replace(/```/g, "")
+         .trim();
+     const jsonMatch = clean.match(/\{[\s\S]*\}/);
+     if (!jsonMatch) throw new Error("No JSON found in response");
+     const parsed = JSON.parse(jsonMatch[0]);
       if (parsed.error) {
         setStatus("error");
         setResult({ errorMessage: parsed.message });
