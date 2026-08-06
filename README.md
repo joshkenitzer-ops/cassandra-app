@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/29409424/README.md)
 # Cassandra
 
 **The Adversarial Review Agent**
