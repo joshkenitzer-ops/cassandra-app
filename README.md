@@ -3,7 +3,7 @@
 
 **The Adversarial Review Agent**
 
-Cassandra is part of the [Lorae](https://github.com/joshkenitzer-ops/lore) tool suite. Cassandra reads any document, infers its intent, and adopts the critical persona the document needs to hear. The warnings are the point.
+Cassandra is part of the [Lorae](https://github.com/joshkenitzer-ops/lorae) tool suite. Cassandra reads any document, infers its intent, and adopts the critical persona the document needs to hear. The warnings are the point.
 
 The myth is exact: Cassandra sees what others miss and warns before it is too late. That is the product.
 
