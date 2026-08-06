@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import loraeLogo from "./assets/lorae-logo.png";
 
 // CASSANDRA v0.1 — Lore
 // Self-red-teamed and patched. First versioned release.
@@ -256,12 +257,10 @@ export default function PromptRedTeam() {
         display: "flex", alignItems: "center", justifyContent: "space-between",
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <div style={{
-            width: 32, height: 32, borderRadius: 8,
-            background: "linear-gradient(135deg, #0a84ff, #ff2d55)",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: 16, boxShadow: "0 0 20px rgba(10,132,255,0.3)",
-          }}>⚡</div>
+          <img src={loraeLogo} alt="Lorae" style={{
+            width: 32, height: 32, borderRadius: "50%",
+            boxShadow: "0 0 20px rgba(10,132,255,0.3)",
+          }} />
           <div>
             <div style={{ fontSize: 15, fontWeight: 700, letterSpacing: 2, fontFamily: "'Space Mono', monospace", color: "rgba(255,255,255,0.9)" }}>CASSANDRA</div>
             <div style={{ fontSize: 10, color: "rgba(255,255,255,0.25)", letterSpacing: 2, fontFamily: "'Space Mono', monospace" }}>PROMPT RED-TEAM SYSTEM  •  v0.1</div>
