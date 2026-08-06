@@ -3,7 +3,7 @@
 
 **The Adversarial Review Agent**
 
-Cassandra is part of the [Lore](https://github.com/joshkenitzer-ops/lore) tool suite. Cassandra reads any document, infers its intent, and adopts the critical persona the document needs to hear. The warnings are the point.
+Cassandra is part of the [Lorae](https://github.com/joshkenitzer-ops/lore) tool suite. Cassandra reads any document, infers its intent, and adopts the critical persona the document needs to hear. The warnings are the point.
 
 The myth is exact: Cassandra sees what others miss and warns before it is too late. That is the product.
 
@@ -45,7 +45,7 @@ When reviewing a spec, Cassandra checks against six known failure modes drawn fr
 
 ## Pipeline Position
 
-Cassandra is the adversarial quality gate in Lore's spec-driven development pipeline.
+Cassandra is the adversarial quality gate in Lorae's spec-driven development pipeline.
 
 | Stage | Tool | Role |
 |---|---|---|
@@ -62,7 +62,7 @@ File upload (PDF, docx) and downloadable branded report export are the next plan
 
 ---
 
-## Part of the Lore Suite
+## Part of the Lorae Suite
 
 | Tool | Role |
 |---|---|
