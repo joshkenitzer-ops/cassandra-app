@@ -258,7 +258,7 @@ export default function PromptRedTeam() {
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <img src={loraeLogo} alt="Lorae" style={{
-            width: 32, height: 32, borderRadius: "50%",
+            width: 48, height: 48, borderRadius: "50%",
             boxShadow: "0 0 20px rgba(10,132,255,0.3)",
           }} />
           <div>
